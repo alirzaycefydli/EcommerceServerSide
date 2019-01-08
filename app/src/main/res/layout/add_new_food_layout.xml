@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp">
+
+    <EditText
+        android:id="@+id/new_food_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:hint="Food Name"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/new_food_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_food_name"
+        android:hint="Food Description"
+        android:textSize="24sp" />
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/new_food_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_food_description"
+        android:hint="Food Price"
+        android:textSize="24sp" />
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/new_food_discount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_food_price"
+        android:hint="Food Discount"
+        android:textSize="24sp" />
+
+
+    <Button
+        android:layout_marginTop="24dp"
+        android:id="@+id/new_food_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_food_discount"
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorPrimaryDark"
+        android:text="select"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:layout_marginTop="24dp"
+        android:id="@+id/new_food_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_food_discount"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimaryDark"
+        android:text="update"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
